@@ -9,6 +9,15 @@
     .promo {
         background: url(../../img/bg.jpg) 30% (center/cover) no-repeat;      
     }
+
+    .advantages {
+        &__item {
+            margin-right: 25px;
+            &:last-child {
+                margin-right: 0;
+            }            
+        }        
+    }
 }
 
 @media (max-width:768px) {
@@ -62,6 +71,31 @@
         &__link {
             font-size: 14px;
         }
+    }
+
+    .advantages {
+        &__header {
+            font-size: 26px;
+        }
+        &__wrapper {
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin-bottom: 35px;
+            margin-right: 0;
+            max-width: 40%;
+            img {
+                width: 60px;
+            }
+        }
+        &__subheader {
+            margin-top: 20px;
+        }
+        &__text {
+            margin-top: 10px;
+        }
+        
     }
 }
 
@@ -141,6 +175,17 @@
             height: 35px;              
             font-size: 12px;
         }
-    }    
+    }
+    
+    .advantages {
+        padding: 60px 0;
+        &__header {
+            font-size: 22px;
+        }
+        &__item {
+            max-width: 277px;
+        }
+    }
 
 }
+
